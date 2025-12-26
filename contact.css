@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f1bfd3;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #ff69b4;
+}
+
+
+.contact {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(to right, #f5cade, #f7e1e9);
+}
+
+.contact h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff69b4;
+    box-shadow: 0 0 10px rgba(255,105,180,0.3);
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1bfd3;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ff69b4;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

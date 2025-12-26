@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Bunga</title>
+  <link rel="stylesheet" href="fakta.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">🌸 Galeri Bunga</div>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="fakta.html" class="active">Fakta Bunga</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="facts">
+  <h1>Fakta Menarik Tentang Bunga</h1>
+  <p>Klik salah satu bunga untuk melihat penjelasan lebih lengkap.</p>
+
+  <!-- GRID (HANYA SATU!) -->
+  <div class="facts-grid">
+
+    <div class="fact-card" onclick="openLightbox('mawar')">
+      <img src="mawar.jpg" alt="Mawar">
+      <h3>Mawar</h3>
+      <p>Simbol cinta dan keindahan.</p>
+    </div>
+
+    <div class="fact-card" onclick="openLightbox('tulip')">
+      <img src="tulip.jpg" alt="Tulip">
+      <h3>Tulip</h3>
+      <p>Bunga khas dari Eropa.</p>
+    </div>
+
+    <div class="fact-card" onclick="openLightbox('anggrek')">
+      <img src="anggrek.jpg" alt="Anggrek">
+      <h3>Anggrek</h3>
+      <p>Keindahan unik dan eksotis.</p>
+    </div>
+
+    <div class="fact-card" onclick="openLightbox('sakura')">
+      <img src="sakura.jpg" alt="Sakura">
+      <h3>Sakura</h3>
+      <p>Keindahan dan kesementaraan hidup.</p>
+    </div>
+
+    <div class="fact-card" onclick="openLightbox('lavender')">
+      <img src="lavender.jpg" alt="Lavender">
+      <h3>Lavender</h3>
+      <p>Aroma yang menenangkan.</p>
+    </div>
+
+    <div class="fact-card" onclick="openLightbox('peony')">
+      <img src="peony.jpg" alt="Peony">
+      <h3>Peony</h3>
+      <p>Simbol kemakmuran dan kebahagiaan.</p>
+    </div>
+
+    <div class="fact-card" onclick="openLightbox('daisy')">
+      <img src="daisy.jpg" alt="Daisy">
+      <h3>Daisy</h3>
+      <p>Melambangkan kepolosan.</p>
+    </div>
+
+    <div class="fact-card" onclick="openLightbox('lili')">
+      <img src="lily.jpg" alt="Lili">
+      <h3>Lily</h3>
+      <p>Simbol kesucian dan keanggunan.</p>
+    </div>
+
+    <div class="fact-card" onclick="openLightbox('melati')">
+      <img src="melati.jpg" alt="Melati">
+      <h3>Melati</h3>
+      <p>Melambangkan ketulusan.</p>
+    </div>
+
+    <div class="fact-card" onclick="openLightbox('kembang-sepatu')">
+      <img src="kembangsepatu.jpg" alt="Kembang Sepatu">
+      <h3>Kembang Sepatu</h3>
+      <p>Simbol keberanian.</p>
+    </div>
+
+    <div class="fact-card" onclick="openLightbox('matahari')">
+      <img src="matahari.jpg" alt="Bunga Matahari">
+      <h3>Bunga Matahari</h3>
+      <p>Melambangkan keceriaan.</p>
+    </div>
+
+    <div class="fact-card" onclick="openLightbox('krisan')">
+      <img src="krisan.jpg" alt="Krisan">
+      <h3>Krisan</h3>
+      <p>Simbol kebahagiaan.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <div class="lightbox-content">
+    <img id="lightbox-img">
+    <div class="lightbox-text">
+      <h2 id="lightbox-title"></h2>
+      <p id="lightbox-desc"></p>
+    </div>
+  </div>
+</div>
+
+<footer>
+        <p>&copy; 2025 Galeri Bunga Siti Syahla.</p>
+        <p>Hubungi kami: 
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=syahlasumantri12@gmail.com" target="_blank">Kirim Email</a>
+        </p>
+        <p><a href="#">Kembali ke atas</a></p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

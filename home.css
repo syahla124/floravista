@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f1bfd3;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #d03784;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 53px;
+    background: linear-gradient(to right, #f5cade, #f7e1e9);
+    gap: 20px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+
+
+.hero-media video {
+    width: 470px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+.about-preview {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(to right, #f5cade, #f7e1e9);
+}
+
+
+footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #f1bfd3;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ff69b4;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
